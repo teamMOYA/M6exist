@@ -33,7 +33,7 @@ public class MyClass {
             XQResultSequence resultadoProd = consultaProd.executeQuery();
             
             while (resultadoProd.next()){
-                l3 += "\t""+ resultadoProd.getItemAsString(null) +"\n";
+                l3 += "\t"+ resultadoProd.getItemAsString(null) +"\n";
             }
             
             String l7 = "</prodzona"+ codZona + "> \n";
@@ -43,11 +43,8 @@ public class MyClass {
             String nombreFichero = "ProdZona" + codZona + ".xml";
             
               //guardar ficheros distintos
-              guardarFichero(resultadoFinal,"nombreFichero")
+              guardarFichero(resultadoFinal,nombreFichero);
               
         }
-    
-        
-        //guardar ficheros distintos
     }
 }
